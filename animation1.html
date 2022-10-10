@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: chartreuse;
+        }
+        .box{
+            height: 300px;
+            width: 300px;
+            background-color: aqua;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation-name: widthAnimate;
+            animation-duration: 3s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            animation-timing-function: ease-in;
+        }
+        img{
+            animation-name: widthAnimate;
+            animation-duration: 1s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            animation-timing-function: ease-in;
+        }
+        @keyframes widthAnimate {
+            from{
+                width: 30px;
+                height: 30px;
+            }
+            to{
+                width: 200px;
+                height: 200px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+    <!-- <div class="box"></div> -->
+    <img src="dragon.png" alt="" width="340px">
+</div>
+</body>
+</html>
